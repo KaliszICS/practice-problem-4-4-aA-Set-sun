@@ -2,12 +2,12 @@ public class PracticeProblem {
 
 	public static void main(String args[]) {
 
-		System.out.println(_hasCapital_("null"));
-		System.out.println(_isPrime_(37));
+		System.out.println(hasCapital("hello"));
+		System.out.println(isPrime(7));
 
 	}
 
-	public static boolean _hasCapital_(String word) {
+	public static boolean hasCapital(String word) {
 		boolean flag = false;
 		int character = 0;
 
@@ -22,12 +22,16 @@ public class PracticeProblem {
 		return flag;
 	}
 
-	public static boolean _isPrime_ (int num) {
-		boolean flag = false;
+	public static boolean isPrime (int num) {
+		boolean flag = true;
+
+		if (num == 1) {
+			return flag = false;
+		}
 
 		for (int i = 2; i <= num; i++) { //start at 2, b/c 1 is not prime
-			if (!(num % 2 == 0)) {
-				flag = true;
+			if (num % 3 == 0) {
+				flag = false;
 			}
 		}
 		return flag;
