@@ -2,8 +2,8 @@ public class PracticeProblem {
 
 	public static void main(String args[]) {
 
-		System.out.println(_hasCapital_("nuLL"));
-		System.out.println(_isPrime_(1));
+		System.out.println(_hasCapital_("null"));
+		System.out.println(_isPrime_(37));
 
 	}
 
@@ -25,8 +25,8 @@ public class PracticeProblem {
 	public static boolean _isPrime_ (int num) {
 		boolean flag = false;
 
-		for (int i = 0; i < 20; i++) {
-			if (!(i % 2 == 0)) {
+		for (int i = 2; i <= num; i++) { //start at 2, b/c 1 is not prime
+			if (!(num % 2 == 0)) {
 				flag = true;
 			}
 		}
